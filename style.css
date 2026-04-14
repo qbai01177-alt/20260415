@@ -1,0 +1,70 @@
+/* Basic Reset & Background Canvas */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #050a1e; /* Match p5.js background */
+  color: #f0f0f0;
+  text-align: center;
+  overflow: hidden; /* Hide scrollbars from the main page */
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Header and Navigation */
+header {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-size: 2.5em;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+nav a {
+  color: #96d4ff;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 8px 15px;
+  border: 1px solid #96d4ff;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover, nav a:focus {
+  background-color: #96d4ff;
+  color: #050a1e;
+}
+
+/* Main Content Iframe */
+main {
+  padding-top: 20px;
+}
+
+iframe {
+  width: 80%;
+  max-width: 900px;
+  height: 60vh;
+  border: 2px solid rgba(150, 212, 255, 0.5);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.95);
+}
